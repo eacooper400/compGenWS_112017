@@ -47,11 +47,11 @@ for (i in 1:nrow(smoothed.results)) {
 }
 
 ### Save the results to an output file
-write.table(smoothed.results, paste0(output, "txt", collapse="."), quote=FALSE,
+write.table(smoothed.results, paste0(c(output, "txt"), collapse="."), quote=FALSE,
             row.names=FALSE, col.names=TRUE, sep="\t")
 
 ### Open a PDF file to plot the results in
-pdf(paste0(output, "pdf", collapse="."))
+pdf(paste0(c(output, "pdf"), collapse="."))
 
 ### Plot the results,
 ### add a star where the SNP of interest is
