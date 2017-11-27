@@ -1,0 +1,11 @@
+#PBS -N rLD
+#PBS -l select=1:ncpus=1:mem=8gb,walltime=00:20:00
+#PBS -j oe
+
+
+module load R/3.4.2-rstudio
+
+cd $HOME/compGenWS_112017
+
+Rscript --vanilla Scripts/11_forCluster.R SampleData/heli_phased.vcf heli_rsq_results 700962 1531867
+
