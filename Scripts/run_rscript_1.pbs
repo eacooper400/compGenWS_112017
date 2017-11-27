@@ -3,7 +3,7 @@
 #PBS -j oe
 
 
-module load R/3.4.2-rstudio
+module load R/3.3.2
 
 cd $HOME/compGenWS_112017
 

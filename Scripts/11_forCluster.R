@@ -1,7 +1,7 @@
 ### Set the Library Path to Install and
 ### Load any Packages; install devtools
 .libPaths(c('~/compGenWS_112017/Rlibs', .libPaths()))
-install.packages("devtools", repos='http://cran.us.r-project.org', lib='$HOME/compGenWS_112017/Rlibs')
+install.packages("devtools", repos='http://cran.us.r-project.org', lib='~/compGenWS_112017/Rlibs', dependencies=TRUE)
 
 ### Use command line arguments to specify input and output files,
 ### as well as the snp positions to look at
